@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Open+Sans:wght@500;700&display=swap');
+
+        .container,
+        #title1 {
+            width: 30vw;
+            margin: 0 auto;
+            background-color: #43aa8b;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 15px;
+            background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Merriweather', serif;
+            color: white;
+            font-size: 40px;
+        }
+
+        body {
+            background: rgb(19, 19, 22);
+            background: linear-gradient(30deg, rgba(19, 19, 22, 1) 12.5%, rgba(28, 28, 33, 1) 25%, rgba(38, 38, 44, 1) 37.5%, rgba(47, 48, 55, 1) 50%, rgba(57, 58, 65, 1) 62.5%, rgba(75, 76, 82, 1) 75%, rgba(91, 92, 98, 1) 87.5%, rgba(106, 107, 112, 1) 100%);
+         }
+
+        #description {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            font-weight: 700;
+            font-size: large;
+        }
+
+        input[type=text] {
+             width: 100%;
+        }
+
+        input[type=email] {
+            width: 100%;
+        }
+
+        input[type=number] {
+            width: 100%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        form {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">FORMULÁRIO PARA CONSULTAR O DENTISTA</h1>
+    <div class="container">
+
+        <p id="description" ">CADASTRE-SE PARA <br>AGENDAR SUA CONSULTA</p><hr>
+        <form style=" margin-top:35px;" id="survey-form">
+            <label id="name-label" for="name">Nome:</label><br>
+            <input type="text" name="Nome" id="name" placeholder="Insira seu nome aqui"> <br><br>
+            <label id="email-lab" for="email">E-mail:</label><br>
+            <input type="email" name="" id="email" placeholder="Insira seu endereço de email aqui"> <br><br>
+            <label id="number-label" for="number">Idas ao dentista:</label><br>
+            <input type="number" name="Idas ao dentisstao" id="number" placeholder="Quantas vezes fui ao dentista"
+                min="0" max="50"> <br><br>
+
+            <label>Selecione abaixo o tipo de problema que você têm:</label> <br>
+
+            <select id="dropdown">
+                <option value="carie">Cárie</option>
+                <option value="dente-quebrado">Dente quebrado</option>
+                <option value="obturacao">Obturação</option>
+                <option value="tartaro">Tártaro</option>
+                <option value="canal">Canal</option>
+            </select><br>
+
+        <p>Selecione o centro de atendimento de sua preferência:</p>
+        <input type="radio" id="centro1" name="centro" value="centro1">
+        <label for="centro1">Centro 1</label><br>
+        <input type="radio" id="centro2" name="centro" value="centro2">
+        <label for="centro2">Centro 2</label><br>
+        <input type="radio" id="centro3" name="centro" value="centro3">
+        <label for="centro3">Centro 3</label>
+
+        <p>Selecione quais tipos de procedimentos você quer fazer:</p>
+        <input type="checkbox" id="tratamentodecarie" name="tratamentodecarie" value="tratamentodecarie">
+        <Label for="tratamentodecarie">Tratamento de cárie</Label><br>
+        <input type="checkbox" id="branqueamentocomlaserr" name="branqueamentocomlaserr" value="branqueamentocomlaser">
+        <Label for="branqueamentocomlaser">Branqueamento com Laser</Label><br>
+        <input type="checkbox" id="limpeza" name="limpeza" value="limpeza">
+        <Label for="limpeza">Limpeza</Label><br>
+        <input type="checkbox" id="restauracao" name="restauracao" value="restauracao">
+        <Label for="restauracao">Restauração da arcada dentária</Label><br>
+        <input type="checkbox" id="extracao" name="extracao" value="extracao">
+        <Label for="extracao">Remoção dos cisos</Label><br>
+
+        <p>Observações adicionais:</p>
+        <textarea type="#a8dadc" name="observacoes" id="observacoes" cols="30" rows="10"></textarea> <br>
+
+        <button style="margin:10px auto; display:block;" id="submit" type="submit" radio="">Enviar Formulário</button>
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
